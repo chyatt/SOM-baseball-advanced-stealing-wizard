@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link rel="stylesheet" href="style.css" />
+      <title>SOM Advanced Stealing Wizard</title>
+   </head>   
+   <body>
+      <h1>SOM Advanced Stealing Wizard</h1>
+      <form id="wizard">
+         <div>
+            <h2>Is the runner being held?</h2>
+            <input type="radio" id="held-yes" name="held" value="1" checked />
+            <label for="held-yes">Yes</label>
+            <input type="radio" id="held-no" name="held" value="0" />
+            <label for="held-no">No</label>
+         </div>
+         <div>
+            <h2>Select the runner's stealing rating</h2>
+            <select id="steal-rating">
+               <option>AAA</option>    
+               <option>AA</option>    
+               <option>A</option>    
+               <option>B</option>    
+               <option>C</option>    
+               <option>D</option>    
+               <option>E</option>    
+            </select><option></option>
+         </div>
+         <div>
+            <h2>Enter the catcher's throwing arm rating</h2>
+            <input type="number" id="arm" min="-5" max="5" value="0" />
+         </div>
+         <div>
+            <h2>Roll the 20-sided die and enter the result</h2>
+            <input type="number" id="d20" min="1" max="20" value="10" />
+         </div>
+         <div><button class="btn">Outcome?</button></div>
+         <div><h2>Result</h2><span id="result"></span></div>
+      </form>
+      <script src="result.js"></script>
+   </body>
+</html>
