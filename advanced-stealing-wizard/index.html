@@ -12,8 +12,12 @@
       <form id="wizard">
          <div>
             <h2>Which base(s) are you attempting to steal?</h2>
-            <input type="radio" id="2b" name="bases" value="2b" checked />
-            <label for="2b">2nd</label>
+            <input type="checkbox" id="2b" name="bases" value="2b" checked />
+            <label for="2b">2nd</label><br />
+            <input type="checkbox" id="3b" name="bases" value="3b" disabled />
+            <label for="3b">3rd</label><br />
+            <input type="checkbox" id="home" name="bases" value="home" disabled />
+            <label for="home">Home</label>
             <p><em>Note: This currently supports calculations for stealing 2nd base only.</em></p>
          </div>
          <div>
