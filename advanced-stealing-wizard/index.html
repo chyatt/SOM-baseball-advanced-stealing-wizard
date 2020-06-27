@@ -9,8 +9,13 @@
    </head>   
    <body>
       <h1>SOM Advanced Stealing Wizard</h1>
-      <p><em>Note: This currently supports calculations for stealing 2nd base only.</em></p>
       <form id="wizard">
+         <div>
+            <h2>Which base(s) are you attempting to steal?</h2>
+            <input type="radio" id="2b" name="bases" value="2b" checked />
+            <label for="2b">2nd</label>
+            <p><em>Note: This currently supports calculations for stealing 2nd base only.</em></p>
+         </div>
          <div>
             <h2>Is the runner being held?</h2>
             <input type="radio" id="held-yes" name="held" value="1" checked />
